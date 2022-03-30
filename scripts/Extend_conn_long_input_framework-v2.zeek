@@ -2,7 +2,7 @@ module MyConnEnrichment;
 
 # Add additional conn fields based on input framework
 #Extending the conn.log - adding the following field to the record (conn info is what is logged)
-redef record conn::Info += {
+redef record Conn::Info += {
 	enrichment_resp:	Val	&log	&optional;
 };
 
