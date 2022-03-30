@@ -9,7 +9,7 @@ redef record conn::Info += {
 #The event that will be used to observe all the connections
 event connection_state_remove(c: connection)
 {
-	if ( c$id$addr in enrichment_table ){
-		c$conn$enrichment_orig=enrichment_table[c$id$addr];
+	if ( c$id$orig_h in enrichment_table ){
+		c$conn$enrichment_orig=enrichment_table[c$id$orig_h];
 	}
 }
