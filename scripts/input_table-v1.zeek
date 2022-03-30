@@ -1,14 +1,14 @@
 module MyDNSEnrichment;
 
 type Idx: record {
-        ip: addr;
+        ip: subnet;
 };
 
 type Val: record {
         service: string ;
 };
 
-global Connenrichment_table: table[addr] of Val = table();
+global Connenrichment_table: table[subnet] of Val = table();
 
 event zeek_init()
 {
