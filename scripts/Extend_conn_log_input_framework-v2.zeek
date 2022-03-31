@@ -3,7 +3,7 @@ module MyConnEnrichment;
 # Add additional conn fields based on input framework
 #Extending the conn.log - adding the following field to the record (conn info is what is logged)
 redef record Conn::Info += {
-	Reputation:	Val	&log	&optional;
+	Reputation: Val &log &optional;
 };
 
 #The event that will be used to observe all the connections
