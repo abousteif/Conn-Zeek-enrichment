@@ -3,5 +3,5 @@ script_dir = scripts
 description = Enriches the conn.log with fields from the input framework 
 tags = conn IPReputation
 
-[input DNSenrichment.csv]
+[input Connenrichment.csv]
 description = Enriching conn log by using the ip address to add reputation to the conn.log
