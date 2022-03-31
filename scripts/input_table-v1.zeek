@@ -5,7 +5,7 @@ type Idx: record {
 };
 
 type Val: record {
-        reputation: string;
+        enrichment: string &log;
 };
 
 global Connenrichment_table: table[addr] of Val = table();
