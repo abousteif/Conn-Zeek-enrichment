@@ -10,6 +10,6 @@ redef record Conn::Info += {
 event connection_state_remove(c: connection)
 {
 	if ( c$id$resp_h in Connenrichment_table ){
-		c$conn$enrichment_resp=connenrichment_table[c$id$resp_h];
+		c$conn$enrichment_resp=Connenrichment_table[c$id$resp_h];
 	}
 }
