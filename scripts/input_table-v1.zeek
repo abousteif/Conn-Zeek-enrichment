@@ -1,4 +1,4 @@
-module MyDNSEnrichment;
+module MyConnEnrichment;
 
 type Idx: record {
         ip: subnet;
